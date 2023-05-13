@@ -1,2 +1,9 @@
-# Python---Desktop-Stock-Notifier
-This project can be used to monitor the price of any stock. It is a great way to stay up-to-date on the market and make informed investment decisions.
+Stock Price Alert
+This project uses the yfinance library to get real-time stock market data. It then checks the price of the stock and sends a notification if it reaches a certain threshold. The notification can be sent to a variety of destinations, such as the user's desktop, phone, or email.
+
+Requirements
+Python 3.6 or higher
+yfinance library
+datetime library
+time library
+plyer library
