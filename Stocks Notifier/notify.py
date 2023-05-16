@@ -3,9 +3,10 @@ import time
 from plyer import notification
 import yfinance as yf
 
-# Ticker of Nifty-50 is "^NSEI"
-msft = yf.Ticker("^NSEI")
-data = msft.info
+ask = input("Which stock do you want to keep your eye on ? [^NSEI , ^NSEBANK , RELIANCE>NS , ^BSESN]")
+# Ticker of Stocks.
+stk = yf.Ticker(f"{ask}")
+data = stk.info
 while True:
     notification.notify(
     title = "Nifty 50".format(datetime.date.today()),
